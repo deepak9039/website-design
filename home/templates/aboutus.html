@@ -1,0 +1,137 @@
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <title>Web Design</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/109559613d.js" crossorigin="anonymous"></script>
+        <link rel="icon" sizes="32x32" href="media/favicons/favicon-32x32.png">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+    </head>
+    <body>
+        
+        <section id="landing" class="text-white">
+            <video autoplay muted loop class="position-fixed">
+                <source src="{% static 'css/v.mp4' %}" type="video/mp4">
+            </video>
+            
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0 bg-transparent align-items-start">
+                    <a class="navbar-brand" href="{% url 'home' %}">Website Design</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button" name="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse ml-auto flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ml-4 active"><a class="nav-link px-2" href="{% url 'home' %}">Home</a></li>
+                            <li class="nav-item ml-4"><a class="nav-link px-2" href="{% url 'aboutus' %}">About</a></li>
+                            <li class="nav-item ml-4"><a class="nav-link px-2" href="{% url 'contact' %}">Contact</a></li>
+                            <li class="nav-item ml-4"><a class="nav-link px-2" href="{% url 'our_team' %}">Our Team</a></li>
+                            <li class="nav-item ml-4"><a class="nav-link px-2" href="#">Get Started</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- person 1 -->
+            <div class="container mt-5">
+                <hr style="border: 2px solid white !important;">
+                <div class="row mt-5">   
+                    <div class="col-md-6 person1">
+                        <img src="{% static 'images/1558883582022 (1).jpg' %}" alt="person1"   style="border-radius: 5%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Loren Williams is from Seattle. He received his B.Sc. in Chemistry from the University of Washington, 
+                            where he worked in the laboratory of Martin Gouterman. He received his Ph.D. in Physical Chemistry from Duke 
+                            University, where he worked the laboratory of Barbara Shaw. He was an American Cancer Society Postdoctoral Fellow at 
+                            Harvard, and an NIH Postdoctoral Fellow at MIT with Alexander Rich. He is currently a Professor in the School of Chemistry 
+                            and Biochemistry at Georgia Tech. Loren received an NSF CAREER Award in 1995, and a Sigma Xi Award for best paper from Georgia
+                            Tech in 1996. He received the Student Advisement Award in 2012, the Petit Institute "Above and Beyond" Award in 2012, Georgia
+                            Tech's Faculty Award for Academic Outreach in 2013, and the Georgia Tech College of Science Faculty Mentor Award in 2013. He was 
+                            granted the Georgia Tech Disability Services Access Alley Award in 2017 for advocating for handicapped students. He received the
+                            Vasser Woolley Award for Excellence in Instruction in 2019. He was Director of the NASA Astrobiology Institute funded RiboEvo Center
+                            from 2008 to 2015. Loren is currently a Co-Lead of the Prebiotic Chemistry and Early Earth Enviro
+                            nment Consortium (PCE3 a NASA Research Coordination Network) and is Director of the NASA-funded Center for the Origin of Life (COOL).</p>
+                            
+                        </p>
+                    </div>
+                </div>
+                <!-- <hr class="text-white"> -->
+                <hr style="border: 2px solid white !important;">
+                <!-- person 2 -->
+                <div class="row mt-5">   
+                    <div class="col-md-6">
+                        <p>
+                            Loren Williams is from Seattle. He received his B.Sc. in Chemistry from the University of Washington, 
+                            where he worked in the laboratory of Martin Gouterman. He received his Ph.D. in Physical Chemistry from Duke 
+                            University, where he worked the laboratory of Barbara Shaw. He was an American Cancer Society Postdoctoral Fellow at 
+                            Harvard, and an NIH Postdoctoral Fellow at MIT with Alexander Rich. He is currently a Professor in the School of Chemistry 
+                            and Biochemistry at Georgia Tech. Loren received an NSF CAREER Award in 1995, and a Sigma Xi Award for best paper from Georgia
+                            Tech in 1996. He received the Student Advisement Award in 2012, the Petit Institute "Above and Beyond" Award in 2012, Georgia
+                            Tech's Faculty Award for Academic Outreach in 2013, and the Georgia Tech College of Science Faculty Mentor Award in 2013. He was 
+                            granted the Georgia Tech Disability Services Access Alley Award in 2017 for advocating for handicapped students. He received the
+                            Vasser Woolley Award for Excellence in Instruction in 2019. He was Director of the NASA Astrobiology Institute funded RiboEvo Center
+                            from 2008 to 2015. Loren is currently a Co-Lead of the Prebiotic Chemistry and Early Earth Enviro
+                            nment Consortium (PCE3 a NASA Research Coordination Network) and is Director of the NASA-funded Center for the Origin of Life (COOL).</p>
+                            
+                        </p>
+                    </div>
+                    <div class="col-md-6 person1">
+                        <img src="{% static 'images/127c91b5-8ef9-40cd-9b31-c07354e1862a.jpg' %}" alt="person1" style="border-radius: 5%;">
+                    </div>
+                </div>
+                <hr style="border: 2px solid white !important;">
+                <!-- person 3 -->
+
+                <div class="row mt-5">
+                    <div class="col-md-6 person1">
+                        <img src="{% static 'images/b47baab5-6534-4277-ac8c-9229d40ff8f3.jpg' %}" alt="person1"   style="border-radius: 5%;">
+                    </div>   
+                    <div class="col-md-6">
+                        <p>
+                            Loren Williams is from Seattle. He received his B.Sc. in Chemistry from the University of Washington, 
+                            where he worked in the laboratory of Martin Gouterman. He received his Ph.D. in Physical Chemistry from Duke 
+                            University, where he worked the laboratory of Barbara Shaw. He was an American Cancer Society Postdoctoral Fellow at 
+                            Harvard, and an NIH Postdoctoral Fellow at MIT with Alexander Rich. He is currently a Professor in the School of Chemistry 
+                            and Biochemistry at Georgia Tech. Loren received an NSF CAREER Award in 1995, and a Sigma Xi Award for best paper from Georgia
+                            Tech in 1996. He received the Student Advisement Award in 2012, the Petit Institute "Above and Beyond" Award in 2012, Georgia
+                            Tech's Faculty Award for Academic Outreach in 2013, and the Georgia Tech College of Science Faculty Mentor Award in 2013. He was 
+                            granted the Georgia Tech Disability Services Access Alley Award in 2017 for advocating for handicapped students. He received the
+                            Vasser Woolley Award for Excellence in Instruction in 2019. He was Director of the NASA Astrobiology Institute funded RiboEvo Center
+                            from 2008 to 2015. Loren is currently a Co-Lead of the Prebiotic Chemistry and Early Earth Enviro
+                            nment Consortium (PCE3 a NASA Research Coordination Network) and is Director of the NASA-funded Center for the Origin of Life (COOL).</p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="border: 2px solid white !important;">
+            <div class="wow slideInUp text-white text-center mt-5 py-3" id="footer-bottom" style="background-color: #64c65e;">
+                <h6>Copyright 2020 <br>All Rights Reserved </h6>
+            </div>
+
+        </section>
+        
+        
+        
+        <!-- Wow js -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>
+        <script src="{% static 'js/wow-activate.js' %} "></script>
+        <script src="{% static 'js/wow.min.js' %} "></script>
+        <!-- Google Maps -->
+        <script src="{% static 'js/initMap.js' %} "></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIN6EBUHnSy7NoBjFgjtUAIwcFoECDao&callback=initMap" async defer></script>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+    </body>
+</html>
